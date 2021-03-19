@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { HomePageModule } from './page/home-page.module';
-import { HomeRoutingModule } from './routing/home-routing.module';
+import { RouterModule } from '@angular/router';
+import { HOME_ROUTES } from './home.routes';
 
 @NgModule({
-  imports: [HomeRoutingModule, HomePageModule],
+  imports: [RouterModule.forChild(HOME_ROUTES)],
 })
 export class HomeModule {}

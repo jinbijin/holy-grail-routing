@@ -3,12 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
-import { RootComponent } from './core/root/components/root.component';
-import { RoutingModule } from './core/routing/routing.module';
+import { RootComponent } from './core/components/root.component';
 
 @NgModule({
-  imports: [BrowserModule, BrowserAnimationsModule, RoutingModule, CoreModule],
-  providers: [],
+  imports: [BrowserModule, BrowserAnimationsModule, CoreModule],
   bootstrap: [RootComponent],
 })
 export class AppModule {}

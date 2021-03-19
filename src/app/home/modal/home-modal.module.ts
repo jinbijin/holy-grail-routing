@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
-import { HomeModalCountModule } from './count/home-modal-count.module';
-import { HomeModalRoutingModule } from './routing/home-modal-routing.module';
+import { MatDialogModule } from '@angular/material/dialog';
+import { RouterModule } from '@angular/router';
+import { HomeModalCountComponent } from './components/home-modal.component';
+import { HOME_MODAL_ROUTES } from './home-modal.routes';
 
 @NgModule({
-  imports: [HomeModalRoutingModule, HomeModalCountModule],
+  declarations: [HomeModalCountComponent],
+  imports: [RouterModule.forChild(HOME_MODAL_ROUTES), MatDialogModule],
 })
 export class HomeModalModule {}
