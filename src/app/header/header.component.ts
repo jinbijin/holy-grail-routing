@@ -5,5 +5,8 @@ import { MenuLink } from './menu-link.type';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  readonly menuItems: MenuLink[] = [{ text: 'Home', routerLink: ['home'] }];
+  readonly menuItems: MenuLink[] = [
+    { text: 'Home', routerLink: ['home'] },
+    { text: 'Tic Tac Toe', routerLink: ['tic-tac-toe'] },
+  ];
 }
