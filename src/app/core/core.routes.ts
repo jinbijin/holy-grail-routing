@@ -8,4 +8,9 @@ export const CORE_ROUTES: Routes = [
     outlet: 'header',
     loadChildren: () => import('src/app/header/header.module').then((m) => m.HeaderModule),
   },
+  {
+    path: '',
+    outlet: 'footer',
+    loadChildren: () => import('src/app/footer/footer.module').then((m) => m.FooterModule),
+  },
 ];

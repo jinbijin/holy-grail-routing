@@ -2,11 +2,17 @@
   <header class="hgr-header">
     <router-outlet name="header"></router-outlet>
   </header>
-  <aside class="hgr-left">Left</aside>
+  <aside class="hgr-left">
+    <router-outlet name="left"></router-outlet>
+  </aside>
   <main class="hgr-content">
     <router-outlet></router-outlet>
     <router-outlet name="modal"></router-outlet>
   </main>
-  <aside class="hgr-right">Right</aside>
-  <footer class="hgr-footer">Footer</footer>
+  <aside class="hgr-right">
+    <router-outlet name="right"></router-outlet>
+  </aside>
+  <footer class="hgr-footer">
+    <router-outlet name="footer"></router-outlet>
+  </footer>
 </div>
