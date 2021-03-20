@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
-import { RootComponent } from './components/root.component';
 import { CORE_ROUTES } from './core.routes';
+import { RootComponent } from './root.component';
 
 @NgModule({
   declarations: [RootComponent],
