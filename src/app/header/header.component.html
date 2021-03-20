@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">
+  <a *ngFor="let menuItem of menuItems" mat-raised-button [routerLink]="menuItem.routerLink" color="primary">{{
+    menuItem.text
+  }}</a>
+</mat-toolbar>
