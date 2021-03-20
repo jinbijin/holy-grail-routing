@@ -1,15 +1,8 @@
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { Component } from '@angular/core';
 
 @Component({
   templateUrl: './home-modal.component.html',
 })
-export class HomeModalCountComponent implements OnInit {
-  @ViewChild('dialogContents', { static: true }) template!: TemplateRef<any>;
-
-  constructor(private readonly matDialog: MatDialog) {}
-
-  ngOnInit(): void {
-    this.matDialog.open(this.template);
-  }
+export class HomeModalCountComponent {
+  readonly returnLink: any[] = ['home'];
 }
