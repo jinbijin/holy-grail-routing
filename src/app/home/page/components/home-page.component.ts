@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
   templateUrl: './home-page.component.html',
 })
 export class HomePageComponent {
-  readonly modalLink: string | any[] = [{ outlets: { modal: ['modal'] } }];
+  readonly modalLink: string | any[] = [{ outlets: { modal: ['home'] } }];
 }
