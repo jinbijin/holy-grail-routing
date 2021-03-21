@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { LuxonModule } from 'luxon-angular';
 import { PlayerStateModule } from 'src/app/shared/states/player/player-state.module';
@@ -15,6 +16,7 @@ import { TIC_TAC_TOE_GAME_DETAIL_ROUTES } from './tic-tac-toe-game-detail.routes
     PlayerStateModule,
     TicTacToeGameStateModule,
     LuxonModule,
+    MatCardModule,
   ],
 })
 export class TicTacToeGameDetailModule {}

@@ -8,6 +8,7 @@ import { TicTacToeGameDetail } from './tic-tac-toe-game-detail.type';
 
 @Component({
   templateUrl: './tic-tac-toe-game-detail.component.html',
+  styleUrls: ['./tic-tac-toe-game-detail.component.scss'],
 })
 export class TicTacToeGameDetailComponent {
   readonly game$: Observable<TicTacToeGameDetail>;

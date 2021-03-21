@@ -1,0 +1,6 @@
+.hgr-player-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-gap: 16px;
+  align-items: baseline;
+}
