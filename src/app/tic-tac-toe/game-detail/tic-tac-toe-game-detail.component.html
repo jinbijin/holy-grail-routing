@@ -1,1 +1,3 @@
-<p>{{ id$ | async }}</p>
+<ng-container *ngIf="game$ | async as game">
+  {{ game.date | dateTimeToFormat: 'd MMMM yyyy' }}
+</ng-container>
