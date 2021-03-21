@@ -3,7 +3,8 @@ import { Routes } from '@angular/router';
 export const TIC_TAC_TOE_ROUTES: Routes = [
   {
     path: '',
-    loadChildren: () => import('./game-detail/tic-tac-toe-game-detail.module').then((m) => m.TicTacToeGameDetailModule),
+    loadChildren: () =>
+      import('./game-landing/tic-tac-toe-game-landing.module').then((m) => m.TicTacToeGameLandingModule),
   },
   {
     path: '',
