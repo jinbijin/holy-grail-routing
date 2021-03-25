@@ -5,7 +5,7 @@ import { TicTacToeGameState } from 'src/app/shared/states/tic-tac-toe-game/tic-t
 import { TicTacToeGameStateModel } from 'src/app/shared/states/tic-tac-toe-game/tic-tac-toe-game.state-model';
 import { TicTacToeGameItem } from './tic-tac-toe-game-item.type';
 
-export class TicTacToeGameOverviewSelectors {
+export class TicTacToeGameListSelectors {
   @Selector([TicTacToeGameState, PlayerStateSelectors.dataSet])
   static games(ticTacToe: TicTacToeGameStateModel, players: Record<number, Player>): TicTacToeGameItem[] {
     return [...ticTacToe.data]

@@ -14,6 +14,16 @@ export const CORE_ROUTES: Routes = [
   },
   {
     path: '',
+    outlet: 'left',
+    loadChildren: () => import('src/app/left/left.module').then((m) => m.LeftModule),
+  },
+  {
+    path: '',
+    outlet: 'right',
+    loadChildren: () => import('src/app/right/right.module').then((m) => m.RightModule),
+  },
+  {
+    path: '',
     outlet: 'footer',
     loadChildren: () => import('src/app/footer/footer.module').then((m) => m.FooterModule),
   },
