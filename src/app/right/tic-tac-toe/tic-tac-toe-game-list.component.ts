@@ -12,6 +12,6 @@ export class TicTacToeGameListComponent {
   readonly games$!: Observable<TicTacToeGameItem[]>;
 
   detailLink(id: number): string | any[] {
-    return ['/', 'tic-tac-toe', id];
+    return ['/', { outlets: { primary: ['tic-tac-toe', id], left: null } }];
   }
 }

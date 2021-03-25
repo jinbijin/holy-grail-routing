@@ -1,1 +1,4 @@
-<p>It works!</p>
+<ng-container *ngIf="player$ | async as player">
+  <h1>{{ player | playerName }}</h1>
+  <p>{{ player.firstNames | join: ' ' }} {{ player.lastName }} ({{ player.country }})</p>
+</ng-container>
