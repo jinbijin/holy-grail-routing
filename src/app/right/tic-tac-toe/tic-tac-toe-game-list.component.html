@@ -1,7 +1,7 @@
 <h1>Game list</h1>
 
 <mat-nav-list>
-  <a *ngFor="let game of games | async" mat-list-item [routerLink]="[game.id]"
+  <a *ngFor="let game of games$ | async" mat-list-item [routerLink]="detailLink(game.id)"
     >{{ game.player1.name }} vs. {{ game.player2.name }} ({{ game.date | dateTimeToRelative: 'days' }})</a
   >
 </mat-nav-list>

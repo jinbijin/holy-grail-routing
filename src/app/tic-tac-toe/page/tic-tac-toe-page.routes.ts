@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { TicTacToeGamePageComponent } from './tic-tac-toe-game-page.component';
+import { TicTacToeGamePageComponent } from './tic-tac-toe-page.component';
 
-export const TIC_TAC_TOE_GAME_LANDING_ROUTES: Routes = [
+export const TIC_TAC_TOE_PAGE_ROUTES: Routes = [
   {
     path: '',
     component: TicTacToeGamePageComponent,

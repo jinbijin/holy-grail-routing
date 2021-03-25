@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './tic-tac-toe-game-page.component.html',
+  templateUrl: './tic-tac-toe-page.component.html',
 })
 export class TicTacToeGamePageComponent {}

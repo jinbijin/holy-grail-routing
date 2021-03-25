@@ -9,5 +9,9 @@ import { TicTacToeGameListSelectors } from './tic-tac-toe-game-list.selectors';
 })
 export class TicTacToeGameListComponent {
   @Select(TicTacToeGameListSelectors.games)
-  readonly games!: Observable<TicTacToeGameItem[]>;
+  readonly games$!: Observable<TicTacToeGameItem[]>;
+
+  detailLink(id: number): string | any[] {
+    return ['/', 'tic-tac-toe', id];
+  }
 }
