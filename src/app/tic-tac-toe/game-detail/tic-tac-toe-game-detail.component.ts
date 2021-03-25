@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
@@ -13,10 +13,14 @@ import { TicTacToeGameDetail } from './tic-tac-toe-game-detail.type';
 export class TicTacToeGameDetailComponent {
   readonly game$: Observable<TicTacToeGameDetail>;
 
-  constructor(activatedRoute: ActivatedRoute, store: Store) {
+  constructor(activatedRoute: ActivatedRoute, store: Store, private readonly router: Router) {
     this.game$ = activatedRoute.paramMap.pipe(
       map((paramMap) => +(paramMap.get('id') ?? '0')),
       switchMap((id) => store.select(TicTacToeGameDetailSelectors.gameSummaryById(id)))
     );
+  }
+
+  openPlayerSidebar(playerId: number): void {
+    this.router.navigate(['/', { outlets: { left: ['player', playerId] } }]);
   }
 }
